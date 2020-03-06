@@ -33,7 +33,7 @@ var facts = [
 // o atributo 'telefone' tem cardinalidade 'muitos' (one-to-many), e 'endereço' é 'one-to-one'.
 var schema = [
     ['endereço', 'cardinality', 'one'],
-    ['telefone', 'cardinality', 'many']
+    ['telefone', 'cardinality', 'many'] 
 ];
 
 
@@ -56,5 +56,5 @@ var schema = [
   ['gabriel', 'telefone', '98888-1111', true],
   ['gabriel', 'telefone', '56789-1010', true]
 ];
-  
+
 export {facts, schema};
