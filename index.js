@@ -38,7 +38,10 @@ const fatosVigentes = (facts, schema) => {
     }
 
     removed.forEach(r => {
-        if (validFacts.findIndex(v => v[2] == r[2])) validFacts.splice(3, 1)
+        indexes = validFacts.findIndex(v => v[2] == r[2])
+        if (indexes) validFacts.splice(indexes, 1);
+            
+        
     })
     console.log(validFacts)
 }
